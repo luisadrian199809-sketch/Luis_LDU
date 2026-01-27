@@ -1,0 +1,103 @@
+{
+  "info": {
+    "name": "TransSchool API",
+    "_postman_id": "12345-transschool",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Listar Rutas",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/rutas",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "rutas"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Crear Ruta",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nombre\": \"Ruta Centro\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/rutas",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "rutas"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Listar Estudiantes",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/estudiantes",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "estudiantes"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Crear Estudiante",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nombre\": \"Juan Perez\",\n  \"direccion\": \"Av. Central\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/estudiantes",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "estudiantes"
+          ]
+        }
+      }
+    }
+  ]
+}
